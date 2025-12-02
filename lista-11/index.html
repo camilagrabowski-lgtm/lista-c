@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto por Idade e Sexo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>DESCONTO POR IDADE E SEXO</h1>
+
+    <main>
+        <section>
+            <h2>Verificar Desconto</h2>
+
+            <input type="number" id="idade" placeholder="Digite a idade">
+
+            <select id="sexo">
+                <option value="">Selecione o sexo</option>
+                <option value="F">Feminino</option>
+                <option value="M">Masculino</option>
+            </select>
+
+            <button onclick="desconto('idade','sexo','resposta')">VERIFICAR</button>
+
+            <p id="resposta"></p>
+        </section>
+    </main>
+</body>
+</html>
