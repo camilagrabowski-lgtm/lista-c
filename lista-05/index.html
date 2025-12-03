@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width='device-width', initial-scale=1.0">
-    <title>Média de peso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparar Pesos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div>
-    <label for="peso1">Digite o 1 peso: </label>
+        <h1>Comparar Pesos</h1>
 
+        <label for="peso1">Peso da primeira pessoa (kg):</label>
+        <input type="number" id="peso1" placeholder="Ex: 70.5">
 
+        <label for="peso2">Peso da segunda pessoa (kg):</label>
+        <input type="number" id="peso2" placeholder="Ex: 65.2">
 
+        <button onclick="comparar()">Comparar</button>
 
-
-    <button onclick="calcule()"></button>
+        <p id="resultado"></p>
     </div>
-    <script src="script.js"></script
+
+    <script src="script.js"></script>
 </body>
 </html>
